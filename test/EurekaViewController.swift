@@ -7,19 +7,11 @@
 
 import UIKit
 
-
-class EurekaViewController: UIViewController {
-
+class AddLogViewController: UIViewController  {
+  
     
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        
-        }
-        
-
+    @IBOutlet var totaltime: UILabel!
+    @IBOutlet var lognumber: UILabel!
     
     override func didReceiveMemoryWarning() {
             super.didReceiveMemoryWarning()

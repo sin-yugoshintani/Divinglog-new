@@ -16,6 +16,8 @@
 		057863B1284A71E400E7AECA /* Eureka in Frameworks */ = {isa = PBXBuildFile; productRef = 057863B0284A71E400E7AECA /* Eureka */; };
 		057863B5284A798200E7AECA /* EurekaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057863B4284A798200E7AECA /* EurekaViewController.swift */; };
 		057863B8284A7BCB00E7AECA /* ImageRow in Frameworks */ = {isa = PBXBuildFile; productRef = 057863B7284A7BCB00E7AECA /* ImageRow */; };
+		057863C3284C9F6400E7AECA /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 057863C2284C9F6400E7AECA /* Realm */; };
+		057863C5284C9F6400E7AECA /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 057863C4284C9F6400E7AECA /* RealmSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				057863C5284C9F6400E7AECA /* RealmSwift in Frameworks */,
+				057863C3284C9F6400E7AECA /* Realm in Frameworks */,
 				057863B1284A71E400E7AECA /* Eureka in Frameworks */,
 				057863B8284A7BCB00E7AECA /* ImageRow in Frameworks */,
 			);
@@ -93,6 +97,8 @@
 			packageProductDependencies = (
 				057863B0284A71E400E7AECA /* Eureka */,
 				057863B7284A7BCB00E7AECA /* ImageRow */,
+				057863C2284C9F6400E7AECA /* Realm */,
+				057863C4284C9F6400E7AECA /* RealmSwift */,
 			);
 			productName = test;
 			productReference = 05786395284A718600E7AECA /* test.app */;
@@ -125,6 +131,7 @@
 			packageReferences = (
 				057863AF284A71E400E7AECA /* XCRemoteSwiftPackageReference "Eureka" */,
 				057863B6284A7BCB00E7AECA /* XCRemoteSwiftPackageReference "ImageRow" */,
+				057863C1284C9F6400E7AECA /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 05786396284A718600E7AECA /* Products */;
 			projectDirPath = "";
@@ -392,6 +399,14 @@
 				kind = branch;
 			};
 		};
+		057863C1284C9F6400E7AECA /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "http://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -404,6 +419,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 057863B6284A7BCB00E7AECA /* XCRemoteSwiftPackageReference "ImageRow" */;
 			productName = ImageRow;
+		};
+		057863C2284C9F6400E7AECA /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 057863C1284C9F6400E7AECA /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		057863C4284C9F6400E7AECA /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 057863C1284C9F6400E7AECA /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -9,8 +9,17 @@ import UIKit
 import Eureka
 import ImageRow
  
+
+
+
+
+
+
+
+
 class ViewController: FormViewController {
     
+    var date = DateFormatter()
     var place : String = ""
     var weather : String = ""
     var averagewaterdepth = Int()
@@ -31,7 +40,29 @@ class ViewController: FormViewController {
     var member3Image:UIImage? = UIImage()
     var member4Image:UIImage? = UIImage()
    
-
+    @IBAction func save() {
+        print(date)
+        print(place)
+        print(weather)
+        print(averagewaterdepth)
+        print(maximumwaterdepth)
+        print(startpressure)
+        print(finishpressure)
+        print(transparency)
+        print(instructor)
+        print(Buddy)
+        print(member1)
+        print(member2)
+        print(member3)
+        print(member4)
+    
+        
+        
+    }
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -40,7 +71,9 @@ class ViewController: FormViewController {
         
         <<< DateInlineRow(){ row in
             row.title = "日にち"
+            
         }.onChange(){row in
+       
             print(row.value!)
         }
         

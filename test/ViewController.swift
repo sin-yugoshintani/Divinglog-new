@@ -19,7 +19,7 @@ import ImageRow
 
 class ViewController: FormViewController {
     
-    var date = DateFormatter()
+    var date: DateFormatter!
     var place : String = ""
     var weather : String = ""
     var averagewaterdepth = Int()
@@ -55,9 +55,6 @@ class ViewController: FormViewController {
         print(member2)
         print(member3)
         print(member4)
-    
-        
-        
     }
     
     
@@ -73,12 +70,10 @@ class ViewController: FormViewController {
             row.title = "日にち"
             
         }.onChange(){row in
-       
+            
             print(row.value!)
         }
         
-        
-
         
         <<< TextRow { row in
                 row.title = "場所"
@@ -94,6 +89,7 @@ class ViewController: FormViewController {
                 $0.options = ["晴れ","曇り","雨"]
                 $0.value = "天気"    // 初期選択項目
             }.onChange{row in
+                self.weather = row.value ?? "weather"
                 print(row.value as Any)
             }
         

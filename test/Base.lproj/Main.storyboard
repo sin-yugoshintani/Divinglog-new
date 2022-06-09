@@ -177,7 +177,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="save"/>
                                 <connections>
-                                    <action selector="save" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q0B-dT-Zh3"/>
+                                    <action selector="save" destination="BYZ-38-t0r" eventType="touchUpInside" id="xYD-TJ-PLh"/>
                                 </connections>
                             </button>
                         </barButtonItem>

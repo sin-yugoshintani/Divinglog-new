@@ -10,13 +10,6 @@ import Eureka
 import ImageRow
  
 
-
-
-
-
-
-
-
 class ViewController: FormViewController {
     
     var date: DateFormatter!
@@ -57,9 +50,6 @@ class ViewController: FormViewController {
         print(member4)
     }
     
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -72,8 +62,10 @@ class ViewController: FormViewController {
         }.onChange(){row in
             
             print(row.value!)
-        }
+            
         
+            
+        }
         
         <<< TextRow { row in
                 row.title = "場所"
@@ -261,12 +253,6 @@ class ViewController: FormViewController {
               }
     
             }
-        
-        
-        
-        
-        
-        
         
         
     }

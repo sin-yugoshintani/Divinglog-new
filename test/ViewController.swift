@@ -62,11 +62,16 @@ class ViewController: FormViewController {
         }.onChange(){row in
             
             print(row.value!)
-            
-        
-            
         }
         
+        +++ Section("開始時間")
+            <<< TimeInlineRow("") {
+                $0.title = "時刻を選択"
+                //$0.value = date
+                }.onChange() { row in
+                   
+                    print(row.value!)
+                }
         <<< TextRow { row in
                 row.title = "場所"
                 row.placeholder = "場所"

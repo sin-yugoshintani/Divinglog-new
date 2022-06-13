@@ -12,7 +12,7 @@ import ImageRow
 
 class ViewController: FormViewController {
     
-    var date: DateFormatter!
+    var date: Date? 
     var place : String = ""
     var weather : String = ""
     var averagewaterdepth = Int()
@@ -34,7 +34,7 @@ class ViewController: FormViewController {
     var member4Image:UIImage? = UIImage()
    
     @IBAction func save() {
-        print(date)
+        print("date:\(date!)")
         print(place)
         print(weather)
         print(averagewaterdepth)
@@ -52,24 +52,19 @@ class ViewController: FormViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
         form +++ Section("日時")
         
         <<< DateInlineRow(){ row in
             row.title = "日にち"
-            
         }.onChange(){row in
-            
+            self.date = row.value!
             print(row.value!)
         }
         
-        +++ Section("開始時間")
-            <<< TimeInlineRow("") {
+        <<< TimeInlineRow("開始時間") {
                 $0.title = "時刻を選択"
-                //$0.value = date
                 }.onChange() { row in
-                   
                     print(row.value!)
                 }
         <<< TextRow { row in
@@ -80,7 +75,7 @@ class ViewController: FormViewController {
                     print(self.place )
                 }
         
-        <<< ActionSheetRow<String>("") {
+        <<< ActionSheetRow<String>("天気") {
                 $0.title = "天気"
                 $0.selectorTitle = "天気を選択"
                 $0.options = ["晴れ","曇り","雨"]

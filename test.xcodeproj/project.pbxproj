@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		053664C92855261700D0E595 /* sea-ocean_00003.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 053664C82855261700D0E595 /* sea-ocean_00003.jpeg */; };
+		053664CB28552BC600D0E595 /* circle-2.svg in Resources */ = {isa = PBXBuildFile; fileRef = 053664CA28552BC500D0E595 /* circle-2.svg */; };
 		05786399284A718600E7AECA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05786398284A718600E7AECA /* AppDelegate.swift */; };
 		0578639B284A718600E7AECA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0578639A284A718600E7AECA /* SceneDelegate.swift */; };
 		0578639D284A718600E7AECA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0578639C284A718600E7AECA /* ViewController.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		053664C82855261700D0E595 /* sea-ocean_00003.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sea-ocean_00003.jpeg"; sourceTree = "<group>"; };
+		053664CA28552BC500D0E595 /* circle-2.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "circle-2.svg"; sourceTree = "<group>"; };
 		05786395284A718600E7AECA /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05786398284A718600E7AECA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0578639A284A718600E7AECA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 				05786398284A718600E7AECA /* AppDelegate.swift */,
 				0578639A284A718600E7AECA /* SceneDelegate.swift */,
 				0578639C284A718600E7AECA /* ViewController.swift */,
+				053664CA28552BC500D0E595 /* circle-2.svg */,
+				053664C82855261700D0E595 /* sea-ocean_00003.jpeg */,
 				057863B4284A798200E7AECA /* EurekaViewController.swift */,
 				0578639E284A718600E7AECA /* Main.storyboard */,
 				057863A1284A718900E7AECA /* Assets.xcassets */,
@@ -148,6 +154,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				057863A5284A718900E7AECA /* LaunchScreen.storyboard in Resources */,
+				053664CB28552BC600D0E595 /* circle-2.svg in Resources */,
+				053664C92855261700D0E595 /* sea-ocean_00003.jpeg in Resources */,
 				057863A2284A718900E7AECA /* Assets.xcassets in Resources */,
 				057863A0284A718600E7AECA /* Main.storyboard in Resources */,
 			);

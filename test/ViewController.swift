@@ -12,7 +12,7 @@ import ImageRow
 
 class ViewController: FormViewController {
     
-    var date: Date? 
+    var date: Date?
     var place : String = ""
     var weather : String = ""
     var averagewaterdepth = Int()

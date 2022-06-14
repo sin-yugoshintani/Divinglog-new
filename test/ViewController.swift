@@ -4,7 +4,7 @@
 //
 //  Created by 菊地英治 on 2022/06/04.
 //
-
+import Foundation
 import UIKit
 import Eureka
 import ImageRow
@@ -65,7 +65,9 @@ class ViewController: FormViewController {
 
         let save = Save()
         save.date = savedate
-        
+        try! realm.write({
+            realm.add(save) // レコードを追加
+        })
         
     }
     override func viewDidLoad() {
@@ -284,12 +286,3 @@ class ViewController: FormViewController {
     }
 }
 
-
-extension ViewController: UINavigationControllerDelegate, UIImagePickerControllerDelegate {
-    
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        guard let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else { return picker.dismiss(animated: true) }
-        imageButton.setBackgroundImage(pickedImage, for: .normal) // imageButtonのバックグラウンドに選択した画像をセット
-        picker.dismiss(animated: true)
-    }
-}

@@ -20,6 +20,7 @@
 		057863B8284A7BCB00E7AECA /* ImageRow in Frameworks */ = {isa = PBXBuildFile; productRef = 057863B7284A7BCB00E7AECA /* ImageRow */; };
 		057863C3284C9F6400E7AECA /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 057863C2284C9F6400E7AECA /* Realm */; };
 		057863C5284C9F6400E7AECA /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 057863C4284C9F6400E7AECA /* RealmSwift */; };
+		0599C4B92857FF3500F7B639 /* LogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0599C4B82857FF3500F7B639 /* LogTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		057863A4284A718900E7AECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		057863A6284A718900E7AECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		057863B4284A798200E7AECA /* EurekaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EurekaViewController.swift; sourceTree = "<group>"; };
+		0599C4B82857FF3500F7B639 /* LogTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				057863A1284A718900E7AECA /* Assets.xcassets */,
 				057863A3284A718900E7AECA /* LaunchScreen.storyboard */,
 				057863A6284A718900E7AECA /* Info.plist */,
+				0599C4B82857FF3500F7B639 /* LogTableViewController.swift */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			files = (
 				0578639D284A718600E7AECA /* ViewController.swift in Sources */,
 				057863B5284A798200E7AECA /* EurekaViewController.swift in Sources */,
+				0599C4B92857FF3500F7B639 /* LogTableViewController.swift in Sources */,
 				05786399284A718600E7AECA /* AppDelegate.swift in Sources */,
 				0578639B284A718600E7AECA /* SceneDelegate.swift in Sources */,
 			);

@@ -8,48 +8,66 @@
 import UIKit
 import Eureka
 import ImageRow
- 
+import RealmSwift
 
 class ViewController: FormViewController {
     
+    let realm = try! Realm()
     var date: Date?
-    var place : String = ""
-    var weather : String = ""
+    var place : String? = ""
+    var weather : String? = ""
     var averagewaterdepth = Int()
     var  maximumwaterdepth = Int()
     var  startpressure = Int()
     var  finishpressure = Int()
     var  transparency = Int()
-    var  instructor : String = ""
-    var  Buddy : String = ""
-    var  member1 : String = ""
-    var  member2 : String = ""
-    var  member3 : String = ""
-    var  member4 : String = ""
+    var  instructor : String? = ""
+    var  Buddy : String? = ""
+    var  member1 : String? = ""
+    var  member2 : String? = ""
+    var  member3 : String? = ""
+    var  member4 : String? = ""
     var InstructorImage:UIImage? = UIImage()
     var BuddyImage:UIImage? = UIImage()
     var member1Image:UIImage? = UIImage()
     var member2Image:UIImage? = UIImage()
     var member3Image:UIImage? = UIImage()
     var member4Image:UIImage? = UIImage()
-   
+ 
     @IBAction func save() {
-        print("date:\(date!)")
-        print(place)
-        print(weather)
-        print(averagewaterdepth)
-        print(maximumwaterdepth)
-        print(startpressure)
-        print(finishpressure)
-        print(transparency)
-        print(instructor)
-        print(Buddy)
-        print(member1)
-        print(member2)
-        print(member3)
-        print(member4)
+        guard let _ = date else { return }
+        guard let _ = place else { return }
+        guard let _ = weather else { return }
+        guard let _ = instructor else { return }
+        guard let _ = Buddy  else { return }
+        guard let _ = member1 else { return }
+        guard let _ = member2 else { return }
+        guard let _ = member3 else { return }
+        guard let _ = member4 else { return }
+            //INtもやる？
+        
+        saveForm()
+        self.dismiss(animated: true)
     }
     
+    
+    func saveForm() {
+
+        guard let savedate = date else { return }
+        guard let savedate = place else { return }
+        guard let savedate = weather else { return }
+        guard let savedate = instructor else { return }
+        guard let savedate = Buddy  else { return }
+        guard let savedate = member1 else { return }
+        guard let savedate = member2 else { return }
+        guard let savedate = member3 else { return }
+        guard let savedate = member4 else { return }
+
+        let save = Save()
+        save.date = savedate
+        
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -257,6 +275,21 @@ class ViewController: FormViewController {
         
     }
 
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       
+        
+        //self.place = self.memoTextField.text ??""
+        //値を投げる
+       
+    }
 }
 
+
+extension ViewController: UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        guard let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else { return picker.dismiss(animated: true) }
+        imageButton.setBackgroundImage(pickedImage, for: .normal) // imageButtonのバックグラウンドに選択した画像をセット
+        picker.dismiss(animated: true)
+    }
+}

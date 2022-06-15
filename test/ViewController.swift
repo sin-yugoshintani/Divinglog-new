@@ -41,12 +41,14 @@ class ViewController: FormViewController {
         self.dismiss(animated: true)
     }
     
+
     func saveForm() {
         
         guard let savedate = date else { return }
-        
+        guard let saveplace = place else { return }
+          
         let save = Save()
-        save.savedate = savedate
+        save.saveText = date
         try! realm.write({
             realm.add(save) // レコードを追加
         })

@@ -11,7 +11,28 @@ import ImageRow
 import RealmSwift
 
 class Save: Object {
-    @objc dynamic var saveText: String = ""
+    @objc dynamic var savedate: Date?
+    @objc dynamic var saveplace: String? = ""
+    @objc dynamic var saveweather : String? = ""
+    @objc dynamic var saveaveragewaterdepth = Int()
+    @objc dynamic var savemaximumwaterdepth = Int()
+    @objc dynamic var savestartpressure = Int()
+    @objc dynamic var savefinishpressure = Int()
+    @objc dynamic var savetransparency = Int()
+    @objc dynamic var saveinstructor : String? = ""
+    @objc dynamic var saveBuddy : String? = ""
+    @objc dynamic var savemember1 : String? = ""
+    @objc dynamic var savemember2 : String? = ""
+    @objc dynamic var savemember3 : String? = ""
+    @objc dynamic var savemember4 : String? = ""
+    @objc dynamic var saveInstructorImage: String?
+    @objc dynamic var saveBuddyImage: String?
+    @objc dynamic var savemember1Image: String?
+    @objc dynamic var savemember2Image: String?
+    @objc dynamic var savemember3Image: String?
+    @objc dynamic var savemember4Image: String?
+    
+    
 }
 class LogTableViewController: UITableViewController {
     let realm = try! Realm()

@@ -16,17 +16,17 @@ class ViewController: FormViewController {
     var date: Date?
     var place : String? = ""
     var weather : String? = ""
-    var averagewaterdepth = Int()
-    var  maximumwaterdepth = Int()
-    var  startpressure = Int()
-    var  finishpressure = Int()
-    var  transparency = Int()
-    var  instructor : String? = ""
-    var  Buddy : String? = ""
-    var  member1 : String? = ""
-    var  member2 : String? = ""
-    var  member3 : String? = ""
-    var  member4 : String? = ""
+    var averagewaterdepth :Int?
+    var maximumwaterdepth :Int?
+    var startpressure :Int?
+    var finishpressure :Int?
+    var transparency:Int?
+    var instructor : String? = ""
+    var Buddy : String? = ""
+    var member1 : String? = ""
+    var member2 : String? = ""
+    var member3 : String? = ""
+    var member4 : String? = ""
     var InstructorImage:UIImage? = UIImage()
     var BuddyImage:UIImage? = UIImage()
     var member1Image:UIImage? = UIImage()
@@ -43,16 +43,31 @@ class ViewController: FormViewController {
     
 
     func saveForm() {
-        
-        guard let savedate = date else { return }
-        guard let saveplace = place else { return }
-          
         let save = Save()
-        save.saveText = date
+        
+        save.savedate = date ?? Date()
+        save.saveplace = place ?? ""
+        save.saveweather = weather  ?? ""
+        save.saveaveragewaterdepth = averagewaterdepth ?? 0
+        save.savemaximumwaterdepth = maximumwaterdepth ?? 0
+        save.savestartpressure = startpressure ?? 0
+        save.savefinishpressure = finishpressure ?? 0
+        save.savetransparency = transparency ?? 0
+        save.saveinstructor = instructor ?? ""
+        save.saveBuddy = Buddy ?? ""
+        save.savemember1 = member1 ?? ""
+        save.savemember2 = member2 ?? ""
+        save.savemember3 = member3 ?? ""
+        save.savemember4 = member4 ?? ""
+        
+        
+        
+
         try! realm.write({
             realm.add(save) // レコードを追加
         })
-        
+        print(save)
+        print(realm)
     }
     override func viewDidLoad() {
         super.viewDidLoad()

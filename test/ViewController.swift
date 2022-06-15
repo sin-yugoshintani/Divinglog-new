@@ -36,13 +36,13 @@ class ViewController: FormViewController {
     
     @IBAction func save() {
         guard let _ = date else { return }
-        
         saveForm()
+    
         self.dismiss(animated: true)
     }
     
-
     func saveForm() {
+        print("wakuwakusann")
         let save = Save()
         
         save.savedate = date ?? Date()
@@ -59,16 +59,58 @@ class ViewController: FormViewController {
         save.savemember2 = member2 ?? ""
         save.savemember3 = member3 ?? ""
         save.savemember4 = member4 ?? ""
+        save.saveInstructorImage = saveImage(image: InstructorImage! )
         
+        if let currentInstructorImage = InstructorImage{
+            save.saveInstructorImage = saveImage(image:currentInstructorImage)
+        }
+        if let currentBuddyImage = BuddyImage{
+            save.saveBuddyImage = saveImage(image:currentBuddyImage)
+        }
+        if let currentmember1Image = member1Image{
+            save.savemember1Image = saveImage(image:currentmember1Image)
+        }
+        if let currentmember2Image = member2Image{
+            save.savemember2Image = saveImage(image:currentmember2Image)
+        }
+        if let currentmember3Image = member3Image{
+            save.savemember3Image = saveImage(image:currentmember3Image)
+        }
+        if let currentmember4Image = member4Image{
+            save.savemember4Image = saveImage(image:currentmember4Image)
+        }
         
-        
-
         try! realm.write({
             realm.add(save) // レコードを追加
         })
         print(save)
         print(realm)
     }
+    // 画像を保存するメソッド
+    func saveImage(image: UIImage) -> String? {
+        guard let imageData = image.jpegData(compressionQuality: 1.0) else { return ""}
+        
+        do {
+            let fileName = UUID().uuidString + ".jpeg" // ファイル名を決定(UUIDは、ユニークなID)
+            let imageURL = getImageURL(fileName: fileName) // 保存先のURLをゲット
+            try imageData.write(to: imageURL) // imageURLに画像を書き込む
+            return fileName
+        } catch {
+            print("Failed to save the image:", error)
+            return ""
+        }
+    }
+    
+    // URLを取得するメソッド
+    func getImageURL(fileName: String) -> URL {
+        let docDir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        return docDir.appendingPathComponent(fileName)
+    }
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

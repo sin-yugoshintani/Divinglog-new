@@ -13,7 +13,6 @@
 		0578639B284A718600E7AECA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0578639A284A718600E7AECA /* SceneDelegate.swift */; };
 		0578639D284A718600E7AECA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0578639C284A718600E7AECA /* ViewController.swift */; };
 		057863A0284A718600E7AECA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0578639E284A718600E7AECA /* Main.storyboard */; };
-		057863A2284A718900E7AECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 057863A1284A718900E7AECA /* Assets.xcassets */; };
 		057863A5284A718900E7AECA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 057863A3284A718900E7AECA /* LaunchScreen.storyboard */; };
 		057863B1284A71E400E7AECA /* Eureka in Frameworks */ = {isa = PBXBuildFile; productRef = 057863B0284A71E400E7AECA /* Eureka */; };
 		057863B5284A798200E7AECA /* EurekaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057863B4284A798200E7AECA /* EurekaViewController.swift */; };
@@ -21,6 +20,11 @@
 		057863C3284C9F6400E7AECA /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 057863C2284C9F6400E7AECA /* Realm */; };
 		057863C5284C9F6400E7AECA /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 057863C4284C9F6400E7AECA /* RealmSwift */; };
 		0599C4B92857FF3500F7B639 /* LogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0599C4B82857FF3500F7B639 /* LogTableViewController.swift */; };
+		0599C4CE285AE47000F7B639 /* 無題 15.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0599C4CD285AE47000F7B639 /* 無題 15.jpg */; };
+		0599C4D0285AE9DF00F7B639 /* 無題 15のコピー.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0599C4CF285AE9DE00F7B639 /* 無題 15のコピー.jpg */; };
+		0599C4D2285AEB0B00F7B639 /* 無題 15のコピー 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0599C4D1285AEB0B00F7B639 /* 無題 15のコピー 2.jpg */; };
+		0599C4D3285B0CD000F7B639 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 057863A1284A718900E7AECA /* Assets.xcassets */; };
+		0599C4D7285B0EE100F7B639 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0599C4D6285B0EE000F7B639 /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		057863A6284A718900E7AECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		057863B4284A798200E7AECA /* EurekaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EurekaViewController.swift; sourceTree = "<group>"; };
 		0599C4B82857FF3500F7B639 /* LogTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogTableViewController.swift; sourceTree = "<group>"; };
+		0599C4CD285AE47000F7B639 /* 無題 15.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "無題 15.jpg"; path = "../../無題 15.jpg"; sourceTree = "<group>"; };
+		0599C4CF285AE9DE00F7B639 /* 無題 15のコピー.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "無題 15のコピー.jpg"; sourceTree = "<group>"; };
+		0599C4D1285AEB0B00F7B639 /* 無題 15のコピー 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "無題 15のコピー 2.jpg"; sourceTree = "<group>"; };
+		0599C4D6285B0EE000F7B639 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +85,15 @@
 				0578639C284A718600E7AECA /* ViewController.swift */,
 				053664CA28552BC500D0E595 /* circle-2.svg */,
 				053664C82855261700D0E595 /* sea-ocean_00003.jpeg */,
+				0599C4D1285AEB0B00F7B639 /* 無題 15のコピー 2.jpg */,
+				0599C4CF285AE9DE00F7B639 /* 無題 15のコピー.jpg */,
 				057863B4284A798200E7AECA /* EurekaViewController.swift */,
 				0578639E284A718600E7AECA /* Main.storyboard */,
+				0599C4CD285AE47000F7B639 /* 無題 15.jpg */,
 				057863A1284A718900E7AECA /* Assets.xcassets */,
 				057863A3284A718900E7AECA /* LaunchScreen.storyboard */,
 				057863A6284A718900E7AECA /* Info.plist */,
+				0599C4D6285B0EE000F7B639 /* icon.png */,
 				0599C4B82857FF3500F7B639 /* LogTableViewController.swift */,
 			);
 			path = test;
@@ -156,10 +168,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0599C4CE285AE47000F7B639 /* 無題 15.jpg in Resources */,
+				0599C4D0285AE9DF00F7B639 /* 無題 15のコピー.jpg in Resources */,
+				0599C4D7285B0EE100F7B639 /* icon.png in Resources */,
 				057863A5284A718900E7AECA /* LaunchScreen.storyboard in Resources */,
 				053664CB28552BC600D0E595 /* circle-2.svg in Resources */,
 				053664C92855261700D0E595 /* sea-ocean_00003.jpeg in Resources */,
-				057863A2284A718900E7AECA /* Assets.xcassets in Resources */,
+				0599C4D2285AEB0B00F7B639 /* 無題 15のコピー 2.jpg in Resources */,
+				0599C4D3285B0CD000F7B639 /* Assets.xcassets in Resources */,
 				057863A0284A718600E7AECA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

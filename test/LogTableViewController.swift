@@ -32,20 +32,16 @@ class Save: Object {
     @objc dynamic var savemember3Image: String?
     @objc dynamic var savemember4Image: String?
     
-    
 }
-class LogTableViewController: UITableViewController {
+class LogTableViewController: UITableViewController{
     let realm = try! Realm()
     @IBOutlet weak var newForumButton: UIBarButtonItem!
-    @IBOutlet var logTableView: UITableView!
-    
     
     
     var saves = [Save]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         getsaveData()
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -55,7 +51,7 @@ class LogTableViewController: UITableViewController {
     
     func getsaveData() {
         saves = Array(realm.objects(Save.self)).reversed()
-        logTableView.reloadData() // テーブルビューをリロード
+//        self.reloadData() // テーブルビューをリロード
     }
     
     
@@ -86,7 +82,55 @@ class LogTableViewController: UITableViewController {
             
         }
     }
+    
+    
+    func logTableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        saves.count
+    }
+    
+    // Cellの中身を設定するデリゲートメソッド
+    func logTableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "logTableViewCell", for: indexPath)
+        guard let saveLabel = cell.viewWithTag(3) as? UILabel,
+              let saveImageView = cell.viewWithTag(4) as? UIImageView else { return cell }
+        
+        let save = saves[indexPath.row]
+        saveLabel.text = save.saveplace
+        
+        
+        return cell
+    }
+    // Cellのサイズを設定するデリゲートメソッド
+//    func logTableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        let save = saves[indexPath.row]
+//
+//    }
+//    
 }
+
+
+
+
+
+
+// TableViewが何個のCellを表示するのか設定するデリゲートメソッド
+
+
+
+
+//extension  LogTableViewController: UITableViewDelegate, UITableViewDataSource {
+//
+//    // TableViewが何個のCellを表示するのか設定するデリゲートメソッド
+//    func logtableView(_ logtableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        saves.count
+//    }
+
+
+
+
+
+
+
 //取得して使う
 
 /*

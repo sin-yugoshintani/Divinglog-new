@@ -8,15 +8,16 @@
 import UIKit
 
 class AddLogViewController: UIViewController  {
-  
-    
-    @IBOutlet var totaltime: UILabel!
-    @IBOutlet var lognumber: UILabel!
-    
-   
-    override func didReceiveMemoryWarning() {
-            super.didReceiveMemoryWarning()
-            // Dispose of any resources that can be recreated.
-
-        }
+//
+//
+//    @IBOutlet var totaltime: UILabel!
+//    @IBOutlet var lognumber: UILabel!
+//
+//    let  lognumber
+//    lognumber
+//    override func didReceiveMemoryWarning() {
+//            super.didReceiveMemoryWarning()
+//            // Dispose of any resources that can be recreated.
+//
+//        }
 }

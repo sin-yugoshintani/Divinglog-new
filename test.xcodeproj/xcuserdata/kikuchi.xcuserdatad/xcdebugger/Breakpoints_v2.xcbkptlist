@@ -3,4 +3,99 @@
    uuid = "2868D06D-7FD4-4872-B1EB-910BC50CEDB1"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FEAA8BF4-516B-427A-A6D0-C94A442FA01A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "test/EurekaViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "AddLogViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "FEAA8BF4-516B-427A-A6D0-C94A442FA01A - 46401e9fd00be6f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "test.AddLogViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; test.AddLogViewController"
+                  moduleName = "test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kikuchi/Desktop/test/test/EurekaViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "31">
+               </Location>
+               <Location
+                  uuid = "FEAA8BF4-516B-427A-A6D0-C94A442FA01A - eff8c8bc79cae29a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "test.AddLogViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; test.AddLogViewController"
+                  moduleName = "test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kikuchi/Desktop/test/test/EurekaViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "304">
+               </Location>
+               <Location
+                  uuid = "FEAA8BF4-516B-427A-A6D0-C94A442FA01A - c364bee428b9f33c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "test.AddLogViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;test.AddLogViewController&gt;"
+                  moduleName = "test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kikuchi/Desktop/test/test/EurekaViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  uuid = "FEAA8BF4-516B-427A-A6D0-C94A442FA01A - e8f72a86a165cced"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "test.AddLogViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;test.AddLogViewController&gt;"
+                  moduleName = "test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kikuchi/Desktop/test/test/EurekaViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "176">
+               </Location>
+               <Location
+                  uuid = "FEAA8BF4-516B-427A-A6D0-C94A442FA01A - ae96695ccd509529"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "test.AddLogViewController.__deallocating_deinit"
+                  moduleName = "test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kikuchi/Desktop/test/test/EurekaViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

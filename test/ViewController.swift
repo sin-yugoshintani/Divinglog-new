@@ -42,7 +42,6 @@ class ViewController: FormViewController {
     }
     
     func saveForm() {
-        print("wakuwakusann")
         let save = Save()
         
         save.savedate = date ?? Date()
@@ -59,7 +58,7 @@ class ViewController: FormViewController {
         save.savemember2 = member2 ?? ""
         save.savemember3 = member3 ?? ""
         save.savemember4 = member4 ?? ""
-        save.saveInstructorImage = saveImage(image: InstructorImage! )
+        
         
         if let currentInstructorImage = InstructorImage{
             save.saveInstructorImage = saveImage(image:currentInstructorImage)
